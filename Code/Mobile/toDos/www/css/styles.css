@@ -1,0 +1,224 @@
+/* Sass Document */
+/* line 17, C:/Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* Scss Document */
+/* line 7, ../SCSS/styles.scss */
+html {
+  font-size: 62.5%;
+}
+
+/* line 11, ../SCSS/styles.scss */
+body {
+  font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+  background: url(images/bg-image.jpg) top center no-repeat fixed;
+  position: relative;
+}
+
+/* line 19, ../SCSS/styles.scss */
+.header {
+  height: 4.8rem;
+  background: rgba(255, 255, 255, 0.8);
+  -webkit-box-shadow: 0 0 0.5rem;
+  -moz-box-shadow: 0 0 0.5rem;
+  box-shadow: 0 0 0.5rem;
+  -webkit-box-sizing: box-border;
+  -moz-box-sizing: box-border;
+  box-sizing: box-border;
+  line-height: 4.8rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+/* line 31, ../SCSS/styles.scss */
+.content {
+  position: relative;
+  top: 5.6rem;
+  padding: 0 1.6rem;
+}
+
+/* line 37, ../SCSS/styles.scss */
+.serchBox {
+  height: 4.8rem;
+  top: 0;
+  width: 100%;
+  padding: 0.4rem 0;
+}
+
+/* line 46, ../SCSS/styles.scss */
+.listTodo ul li {
+  line-height: 5.6rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+/* line 49, ../SCSS/styles.scss */
+.listTodo ul li a {
+  color: #FFF;
+  text-decoration: none;
+  font-size: 1.8rem;
+}
+/* line 56, ../SCSS/styles.scss */
+.listTodo ul li ul li {
+  line-height: 4.8rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: none;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 61, ../SCSS/styles.scss */
+.listTodo ul li ul li a {
+  font-size: 1.4rem;
+}
+/* line 64, ../SCSS/styles.scss */
+.listTodo ul li ul li span {
+  line-height: 4.8rem;
+  margin-right: 0.8rem !important;
+  margin-left: 0.8rem !important;
+}
+
+/* line 75, ../SCSS/styles.scss */
+.icon-x {
+  font-size: 1.6rem;
+}
+
+/* line 79, ../SCSS/styles.scss */
+.icon-2x {
+  font-size: 2.4rem;
+}
+
+/* line 83, ../SCSS/styles.scss */
+.icon-3x {
+  font-size: 3.2rem;
+}
+
+/* line 87, ../SCSS/styles.scss */
+.icon-4x {
+  font-size: 4.8rem;
+}
+
+/* line 91, ../SCSS/styles.scss */
+.icon-5x {
+  font-size: 7.2rem;
+}
+
+/* line 95, ../SCSS/styles.scss */
+[class^="icon-"], [class*=" icon-"] {
+  color: #064482;
+}
+
+/* line 99, ../SCSS/styles.scss */
+[class^="icon-"].white, [class*=" icon-"].white {
+  color: #FFF;
+}
+
+/* line 103, ../SCSS/styles.scss */
+input, button {
+  margin: 0;
+  height: 4rem;
+  line-height: 4rem;
+  display: inline-block;
+  width: 100%;
+  padding: 0.5rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 113, ../SCSS/styles.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 117, ../SCSS/styles.scss */
+::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #fff;
+  font-style: italic;
+}
+
+/* line 121, ../SCSS/styles.scss */
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #fff;
+  opacity: 1;
+}
+
+/* line 125, ../SCSS/styles.scss */
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #fff;
+  opacity: 1;
+}
+
+/* line 129, ../SCSS/styles.scss */
+:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #fff;
+}
