@@ -1,0 +1,42 @@
+@mixin transform($rotate) {
+  -webkit-transform: rotate($rotate);
+  -moz-transform: rotate($rotate);
+  -ms-transform: rotate($rotate);
+  -o-transform: rotate($rotate);
+  transform: rotate($rotate);
+}
+@mixin translateX($transformVal){
+  -ms-transform: rotate($transformVal); /* IE 9 */
+  -webkit-transform: rotate($transformVal); /* Chrome, Safari, Opera */
+  transform: rotate($transformVal);
+}
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+@mixin box-shadow($shadow){
+  -webkit-box-shadow: $shadow;
+  -moz-box-shadow: $shadow;
+  box-shadow: $shadow;
+}
+@mixin background($imgpath,$repeat: no-repeat) {
+  background: {
+    image: url($imgpath);
+    repeat: $repeat;
+  }
+}
+@mixin linear-gradient($fromColor, $toColor) {
+  background-color: $toColor; /* Fallback Color */
+  background-image: -webkit-gradient(linear, left top, left bottom, from($fromColor), to($toColor)); /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(top, $fromColor, $toColor); /* Chrome 10+, Saf5.1+, iOS 5+ */
+  background-image:    -moz-linear-gradient(top, $fromColor, $toColor); /* FF3.6 */
+  background-image:     -ms-linear-gradient(top, $fromColor, $toColor); /* IE10 */
+  background-image:      -o-linear-gradient(top, $fromColor, $toColor); /* Opera 11.10+ */
+  background-image:         linear-gradient(top, $fromColor, $toColor);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#{$fromColor}', EndColorStr='#{$toColor}');
+}
+@mixin respond-to($media) {
+    @media only screen and (min-width: $media) { @content; }
+}

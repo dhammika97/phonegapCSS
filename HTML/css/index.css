@@ -1,0 +1,233 @@
+/* Sass Document */
+/* line 17, ../../../../Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 7, ../scss/index.scss */
+html, body {
+  overflow: hidden;
+  font-family: Roboto;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  font-size: 62.5%;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* line 16, ../scss/index.scss */
+.container {
+  height: 100%;
+}
+
+/* Responsive Background Image*/
+/* line 20, ../scss/index.scss */
+body {
+  background-position: top center;
+  background-attachment: fixed;
+}
+@media only screen and (min-width: 200px) {
+  /* line 20, ../scss/index.scss */
+  body {
+    background-image: url("../img/res/bg/android/bg-ldpi-portrait.png");
+    background-repeat: no-repeat;
+  }
+}
+@media only screen and (min-width: 320px) {
+  /* line 20, ../scss/index.scss */
+  body {
+    background-image: url("../img/res/bg/android/bg-mdpi-portrait.png");
+    background-repeat: no-repeat;
+  }
+}
+@media only screen and (min-width: 480px) {
+  /* line 20, ../scss/index.scss */
+  body {
+    background-image: url("../img/res/bg/android/bg-hdpi-portrait.png");
+    background-repeat: no-repeat;
+  }
+}
+@media only screen and (min-width: 640px) {
+  /* line 20, ../scss/index.scss */
+  body {
+    background-image: url("../img/res/bg/ios/bg-iphone-portrait-2x.jpg");
+    background-repeat: no-repeat;
+  }
+}
+@media only screen and (min-width: 720px) {
+  /* line 20, ../scss/index.scss */
+  body {
+    background-image: url("../img/res/bg/android/bg-xdpi-portrait.png");
+    background-repeat: no-repeat;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* line 20, ../scss/index.scss */
+  body {
+    background-image: url("../img/res/bg/wp/bg-WXGA.jpg");
+    background-repeat: no-repeat;
+  }
+}
+@media only screen and (min-width: 1536px) {
+  /* line 20, ../scss/index.scss */
+  body {
+    background-image: url("../img/res/bg/ios/bg-ipad-portrait-2x.jpg");
+    background-repeat: no-repeat;
+  }
+}
+
+/* Common CSS */
+/* line 48, ../scss/index.scss */
+input, button {
+  position: relative;
+  font-size: 1.6rem;
+  height: 4.8rem;
+  padding: 4px;
+  box-sizing: border-box;
+  margin-bottom: 8px;
+}
+
+/* line 56, ../scss/index.scss */
+input[type='text'], input[type='password'] {
+  color: #333333;
+}
+
+/* line 59, ../scss/index.scss */
+::-webkit-input-placeholder {
+  color: #939393;
+}
+
+/* line 62, ../scss/index.scss */
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #939393;
+}
+
+/* line 65, ../scss/index.scss */
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #939393;
+}
+
+/* line 68, ../scss/index.scss */
+:-ms-input-placeholder {
+  color: #939393;
+}
+
+/* Login Controller CSS */
+/* line 73, ../scss/index.scss */
+.login-wrapper {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 25px 0px rgba(35, 35, 35, 0.5);
+  -moz-box-shadow: 0px 0px 25px 0px rgba(35, 35, 35, 0.5);
+  box-shadow: 0px 0px 25px 0px rgba(35, 35, 35, 0.5);
+  background: #C9C9C9;
+  left: 50%;
+  margin: -200px 0 0 -40%;
+  position: absolute;
+  top: 50%;
+  width: 80%;
+  height: auto;
+  visibility: visible;
+}
+
+/* line 85, ../scss/index.scss */
+.form-login {
+  margin: 0 auto;
+  padding: 40px 15px;
+}
+/* line 89, ../scss/index.scss */
+.form-login .form-control {
+  background-color: #ffffff;
+  border: 1px solid #9B9B9B;
+  width: 100%;
+}
+/* line 94, ../scss/index.scss */
+.form-login .login-btn {
+  background-color: #0C78E4;
+  border: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  width: 100%;
+}
+/* line 101, ../scss/index.scss */
+.form-login .signup-wrapper {
+  position: relative;
+  width: 100%;
+}
+/* line 105, ../scss/index.scss */
+.form-login .signup-text {
+  color: #ffffff;
+  font-size: 1.6rem;
+  font-weight: 100;
+  padding-top: 8px;
+}
+/* line 111, ../scss/index.scss */
+.form-login a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+}

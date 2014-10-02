@@ -1,0 +1,116 @@
+/* Sass Document */
+@import "compass/css3";
+@import "compass/reset";
+@import "compass/utilities";
+@import "mixins";
+
+html,body{
+    overflow: hidden;
+    font-family:Roboto;
+    padding:0;
+    margin:0;
+    height: 100%;
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+.container {
+  height: 100%;
+}
+/* Responsive Background Image*/
+body {
+  background-position: top center;
+  background-attachment: fixed;
+
+  @include respond-to(200px) {
+    @include background('../img/res/bg/android/bg-ldpi-portrait.png');
+  }
+  @include respond-to(320px) {
+    @include background('../img/res/bg/android/bg-mdpi-portrait.png');
+  }
+  @include respond-to(480px) {
+    @include background('../img/res/bg/android/bg-hdpi-portrait.png');
+  }
+  @include respond-to(640px) {
+    @include background('../img/res/bg/ios/bg-iphone-portrait-2x.jpg');
+  }
+  @include respond-to(720px) {
+    @include background('../img/res/bg/android/bg-xdpi-portrait.png');
+  }
+  @include respond-to(768px) {
+    @include background('../img/res/bg/wp/bg-WXGA.jpg');
+  }
+  @include respond-to(1536px) {
+    @include background('../img/res/bg/ios/bg-ipad-portrait-2x.jpg');
+  }
+}
+
+/* Common CSS */
+input,button{
+  position: relative;
+  font-size: 1.6rem;
+  height: 4.8rem;
+  padding: 4px;
+  box-sizing: border-box;
+  margin-bottom: 8px;
+}
+input[type='text'],input[type='password']{
+  color: #333333;
+}
+::-webkit-input-placeholder {
+  color: #939393;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #939393;
+}
+::-moz-placeholder {  /* Firefox 19+ */
+  color: #939393;
+}
+:-ms-input-placeholder {
+  color: #939393;
+}
+
+/* Login Controller CSS */
+.login-wrapper{
+    @include border-radius(5px);
+    @include box-shadow(0px 0px 25px 0px rgba(35,35,35,0.50));
+    background: #C9C9C9;
+    left: 50%;
+    margin: -200px 0 0 -40%;
+    position: absolute;
+    top: 50%;
+    width: 80%;
+    height: auto;
+    visibility: visible;
+}
+.form-login{
+    margin: 0 auto;
+    padding:40px 15px;
+
+    .form-control{
+        background-color: #ffffff;
+        border: 1px solid #9B9B9B;
+        width: 100%;
+    }
+    .login-btn{
+        background-color:#0C78E4;
+        border: none;
+        color: #ffffff;
+        text-transform: uppercase;
+        width: 100%;
+    }
+    .signup-wrapper{
+        position: relative;
+        width: 100%;
+    }
+    .signup-text{
+        color: #ffffff;
+        font-size: 1.6rem;
+        font-weight: 100;
+        padding-top: 8px;
+    }
+    a{
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: 500;
+    }
+}
